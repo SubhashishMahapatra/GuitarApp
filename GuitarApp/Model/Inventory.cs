@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +37,7 @@ namespace GuitarApp.Model
 
             foreach(Guitar guitar in guitars)
             {
-                if(guitar.specs.GetBuilder() ==  guitar.specs.GetBuilder() &&  guitar.specs.GetModel() == searchGuitar.GetModel() && guitar.specs.GetType() == searchGuitar.GetType() && guitar.specs.GetBackWood() == searchGuitar.GetBackWood() && guitar.specs.GetTopWood() == searchGuitar.GetTopWood())
+                if(guitar.specs.GetBuilder() ==  searchGuitar.GetBuilder() &&  guitar.specs.GetModel() == searchGuitar.GetModel() && guitar.specs.GetType() == searchGuitar.GetType() && guitar.specs.GetBackWood() == searchGuitar.GetBackWood() && guitar.specs.GetTopWood() == searchGuitar.GetTopWood())
                 {
                     matchingGuitars.Add(guitar);
                 }
